@@ -1,0 +1,100 @@
+body {
+font-size: 20px;
+background-color: #c5e789;
+}
+
+#button1 {
+  font-size: 20px;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #3d9254;
+  border: solid 2px #3d9254;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+#button1:hover {
+  background: #3d9254;
+  color: white;
+}
+
+#button2 {
+  font-size: 20px;
+  display: inline-block;
+  padding: 0.3em 1.5em;
+  text-decoration: none;
+  color: #3d9254;
+  border: solid 2px #3d9254;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+#button2:hover {
+  background: #3d9254;
+  color: white;
+}
+
+#button3 {
+  font-size: 20px;
+  display: inline-block;
+  padding: 0.3em 1.5em;
+  text-decoration: none;
+  color: #3d9254;
+  border: solid 2px #3d9254;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+#button3:hover {
+  background: #3d9254;
+  color: white;
+}
+
+#button4 {
+  font-size: 20px;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #3d9254;
+  border: solid 2px #3d9254;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+#button4:hover {
+  background: #3d9254;
+  color: white;
+}
+
+#Text_key {
+  width: 150px;
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+#Text_value {
+  width: 380px;
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+.quiz_img {
+text-align: center;
+}
+
+.quiz_text {
+text-align: center;
+}
+
+#quiz_form {
+text-align: center;
+}
+
+.box1 {
+margin-bottom: 2em;
+}
+
+span {
+color: red;
+}

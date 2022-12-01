@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ポケモンコレクション</title>
+    <link rel="stylesheet" href="css/colle.css">
+</head>
+
+<body translate="no">
+
+    <div id="wrap">
+
+        <a href="#" class="hb" style="transform: translate3d(-913px, 0px, 0px);">
+            <div class="c">
+                <img src="img2/643.png" alt="">
+                <div class="txt">
+                    <h1>No.643 レシラム</h1>
+                    <p>分類：はくようポケモン<br>タイプ：ドラゴン、ほのお<br>高さ：3.2m<br>重さ：330.0kg<br>特性：ターボブレイズ</p>
+                </div>
+            </div>
+        </a>
+        <div class="fullBg">
+            <img src="img2/643.png" alt="">
+        </div>
+
+        <a href="#" class="hb" style="transform: translate3d(-913px, 0px, 0px);">
+            <div class="c">
+                <img src="img2/644.png" alt="">
+                <div class="txt">
+                    <h1>No.644 ゼクロム</h1>
+                    <p>分類：こくいんポケモン<br>タイプ：ドラゴン、でんき<br>高さ：2.9m<br>重さ：345.0kg<br>特性：テラボルテージ</p>
+                </div>
+            </div>
+        </a>
+        <div class="fullBg">
+            <img src="img2/644.png" alt="">
+        </div>
+
+        <a href="#" class="hb" style="transform: translate3d(-913px, 0px, 0px);">
+            <div class="c">
+                <img src="img2/646.png" alt="">
+                <div class="txt">
+                    <h1>No.646 キュレム</h1>
+                    <p>分類：きょうかいポケモン<br>タイプ：ドラゴン、こおり<br>高さ：3.0m<br>重さ：325.0kg<br>特性：プレッシャー</p>
+                </div>
+            </div>
+        </a>
+        <div class="fullBg">
+            <img src="img2/646.png" alt="">
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script id="rendered-js">
+        $(document).ready(function () {
+            var docWidth = $('body').width(),
+                $wrap = $('#wrap'),
+                $images = $('#wrap .hb'),
+                slidesWidth = $wrap.width();
+            $(window).on('resize', function () {
+                docWidth = $('body').width();
+                slidesWidth = $wrap.width();
+            });
+
+            $(document).mousemove(function (e) {
+                var mouseX = e.pageX,
+                    offset = mouseX / docWidth * slidesWidth - mouseX / 2;
+                $images.css({
+                    '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+                    'transform': 'translate3d(' + -offset + 'px,0,0)'
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ひみつのばしょへのパスワード</title>
+
+    <link rel="stylesheet" type="text/css" href="css/pass.css">
+
+    <script type="text/javascript">
+        function matchPass() {
+
+            var inpass = document.forms["pass"].elements["inpass"].value;
+            var validpass1 = "643";
+            var validpass2 = "644";
+            var validpass3 = "646";
+            if (inpass == validpass1) location.href = "643.html";
+            else if (inpass == validpass2) location.href = "644.html";
+            else if (inpass == validpass3) location.href = "646.html";
+            else alert("パスワードがちがうみたいだよ");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="img">
+        <img src="img3/pass.jpg">
+    </div>
+
+    <div class="text">
+        <p>ひみつのばしょは３つあるよ</p>
+        <p>クイズにこたえてパスワードをゲットしよう！</p>
+        <p>ゲットしたパスワードを１つずつ、にゅうりょくしてね</p>
+    </div>
+
+    <form id="pass">
+        <div>
+            <input type="password" value="" name="inpass">
+            <input type="button" value="にゅうりょく" onclick="matchPass();">
+        </div>
+    </form>
+
+</body>
+
+</html>

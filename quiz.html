@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ポケモンクイズ</title>
+  <link rel="stylesheet" href="css/quiz.css">
+
+  <script type="text/javascript">
+    function SaveKeyValue() {
+      if (window.localStorage != null) {
+        key = document.forms.quiz_form.Text_key.value;
+        value = document.forms.quiz_form.Text_value.value;
+
+        window.localStorage.setItem(key, value);
+      }
+    }
+
+    function LoadKeyValue() {
+      if (!window.localStorage != null) {
+        key = document.forms.quiz_form.Text_key.value;
+        value = window.localStorage.getItem(key)
+        document.forms.quiz_form.Text_value.value = value;
+      }
+    }
+
+    function RemoveKeyValue() {
+      if (!window.localStorage != null) {
+        key = document.forms.quiz_form.Text_key.value;
+        window.localStorage.removeItem(key);
+      }
+    }
+
+    function ClearKeyValue() {
+      if (!window.localStorage != null) {
+        window.localStorage.clear();
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="quiz_img">
+    <a href="img3/quiz2.png"><img src="img3/quiz.png" alt=""></a>
+  </div>
+
+  <div class="quiz_text">
+    <p>
+      ピカチュウが10まんボルトをつかいました。<br>ちかくにいたサトシがまきこまれました。<br>サトシのからだに1ミリアンペアのでんりゅうがながれました。<br>サトシのていこうはなんオームになるでしょう？<br>※ピカチュウの10まんボルトのでんあつは10まんボルトとかていします。
+    </p>
+    <p>⚡<span>クイズのこたえをにゅうりょくしたら、おもいだすボタンをおしてね</span>⚡</p>
+  </div>
+
+  <form id="quiz_form">
+    <div class="box1">
+      クイズのこたえ <input id="Text_key" type="text">
+      パスワード <input id="Text_value" type="text"><br>
+    </div>
+    <div class="box2">
+      <input id="button1" type="button" value="おもいだす" onclick="LoadKeyValue()"><br>
+      <input id="button2" type="button" value="おぼえる" onclick="SaveKeyValue()"><br>
+      <input id="button3" type="button" value="わすれる" onclick="RemoveKeyValue()"><br>
+      <input id="button4" type="button" value="ぜんぶなし" onclick="ClearKeyValue()"><br>
+    </div>
+  </form>
+
+</body>
+
+</html>

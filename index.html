@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>ポケモンミッション</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/sanitize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="img/logo.png" alt="" class="logo">
+
+        <div class="button-box">
+            <button>ミッションクリア</button>
+        </div>
+        <div class="message hidden">ひみつのいりぐちをさがそう</div>
+
+        <div class="nav">
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <label for="drawer_input" class="drawer_open"><span></span></label>
+            <nav class="nav_content">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="colle.html" target=”_blank”>ポケモンコレクション</a></li>
+                    <li class="nav_item"><a href="quiz.html" target=”_blank”>ポケモンクイズ</a></li>
+                    <li class="nav_item"><a href="pass.html" target=”_blank”>ほのおのやま</a></li>
+                    <li class="nav_item"><a href="pass.html" target=”_blank”>かみなりのしんでん</a></li>
+                    <li class="nav_item"><a href="pass.html" target=”_blank”>こおりのどうくつ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section id="stamp">
+
+        <div class="header">
+            <h1><span>ミッション</span>をクリアして<span>ポケモン</span>をゲットしよう！</h1>
+        </div>
+        <div class="wrapper">
+            <div class="area">
+                <img id="area1" src="img/000.png" onclick="replace1()" value="+">
+                <div class="mission">おきる</div>
+                <div class="text">あさおきて<br>まどをあけ<br>たいようのひかりを<br>からだにあびよう</div>
+            </div>
+            <div class="area">
+                <img id="area2" src="img/000.png" onclick="replace2()">
+                <div class="mission">あいさつする</div>
+                <div class="text">いちにちのはじまり<br>おはようはえがおで<br>あかるくげんきに</div>
+            </div>
+            <div class="area">
+                <img id="area3" src="img/000.png" onclick="replace3()">
+                <div class="mission">トイレにいく</div>
+                <div class="text">おしっこしたら<br>しっかりすいぶん<br>ほきゅうをわすれずに</div>
+            </div>
+            <div class="area">
+                <img id="area4" src="img/000.png" onclick="replace4()">
+                <div class="mission">てをあらう</div>
+                <div class="text">てくびもつめも<br>てのこうも<br>ゆびのあいだも<br>ちゃんとあらおう</div>
+            </div>
+
+    </section>
+
+    <script>
+
+        var img_src = new Array("img/000.png", "img/001.png", "img/002.png", "img/003.png", "img/004.png", "img/005.png", "img/006.png", "img/007.png", "img/008.png", "img/009.png", "img/010.png", "img/011.png", "img/012.png", "img/013.png", "img/014.png", "img/015.png", "img/016.png", "img/017.png", "img/018.png", "img/019.png", "img/020.png");
+        var i = 0;
+
+        function replace1() {
+
+            if (i == 20) {
+                i = 0;
+            } else {
+                i++;
+            }
+            document.getElementById("area1").src = img_src[i];
+        }
+
+        function replace2() {
+
+            if (i == 20) {
+                i = 0;
+            } else {
+                i++;
+            }
+            document.getElementById("area2").src = img_src[i];
+        }
+
+        function replace3() {
+
+            if (i == 20) {
+                i = 0;
+            } else {
+                i++;
+            }
+            document.getElementById("area3").src = img_src[i];
+        }
+
+        function replace4() {
+
+            if (i == 20) {
+                i = 0;
+            } else {
+                i++;
+            }
+            document.getElementById("area4").src = img_src[i];
+        }
+
+    </script>
+
+    <div class="wrapper">
+        <div class="area">
+            <img id="area5" src="img/000.png" onclick="replace5()">
+            <div class="mission">うがいする</div>
+            <div class="text">バイキンを<br>とりこまないよう<br>ガラガラぶくぶく<br>おいだそう</div>
+        </div>
+        <div class="area">
+            <img id="area6" src="img/000.png" onclick="replace6()">
+            <div class="mission">あさごはんをたべる</div>
+            <div class="text">かんしゃして<br>のこさずに<br>しっかりたべよう</div>
+        </div>
+        <div class="area">
+            <img id="area7" src="img/000.png" onclick="replace7()">
+            <div class="mission">くすりをのむ</div>
+            <div class="text">おみずをよういして<br>あわてずに<br>ゆっくりのもう</div>
+        </div>
+        <div class="area">
+            <img id="area8" src="img/000.png" onclick="replace8()">
+            <div class="mission">みじたくする</div>
+            <div class="text">わすれものがないか<br>もういちど<br>こえにだして<br>かくにんしよう</div>
+        </div>
+        </section>
+
+        <script>
+            function replace5() {
+
+                if (i == 20) {
+                    i = 0;
+                } else {
+                    i++;
+                }
+                document.getElementById("area5").src = img_src[i];
+            }
+
+            function replace6() {
+
+                if (i == 20) {
+                    i = 0;
+                } else {
+                    i++;
+                }
+                document.getElementById("area6").src = img_src[i];
+            }
+
+            function replace7() {
+
+                if (i == 20) {
+                    i = 0;
+                } else {
+                    i++;
+                }
+                document.getElementById("area7").src = img_src[i];
+            }
+
+            function replace8() {
+
+                if (i == 20) {
+                    i = 0;
+                } else {
+                    i++;
+                }
+                document.getElementById("area8").src = img_src[i];
+            }
+
+        </script>
+
+        <script src="js/main.js"></script>
+
+    </div>
+
+    <div id="pikachu"></div>
+    <div id="satoshi"></div>
+
+</body>
+
+</html>

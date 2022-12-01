@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'メイリオ', 'Meiryo', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.img {
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+#pass {
+    width: fit-content;
+    margin: auto;
+}
+
+input {
+    font-size: 20px;
+}
